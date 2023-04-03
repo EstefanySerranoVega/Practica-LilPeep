@@ -2,23 +2,296 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+
+    text-decoration: none;
+}
+a{
+    color:#ffb5cf;
 }
 .container{
     width:100%;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
-    justify-content:space-around;
+    justify-content:center;
 }
 .header{
     width:90%;
-    height:3rem;
+    height:5rem;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-between;
-    background:red;
+    font-size:1.8rem;
+    font-family: 'Covered By Your Grace', cursive;
 }
 .logo{
-    wi
+    background:black;
+    width:7rem;
+    height:4.6rem;
+    background-image: url('../img/Logo-Lil-Peep.png');
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    border-radius:0.6rem;
+}
+nav{
+    width:65%;
+    height:5rem;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+nav ul{
+    width:100%;
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    gap: 5%;
+    transition:all 400ms;
+}
+li{
+    transition:all 400ms;
+}
+li:hover{
+    background:pink;
+    padding:0.6rem;
+    border-radius:0.5rem;
+}
+.content{
+    width:90%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+}
+.boxHeader{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+}
+.hero{
+    width:100%;
+    height:90vh;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size:3rem;
+    text-align:center;
+}
+.boxHeader .text{
+    padding:0.6rem;
+}
+.hero .button{
+    background:#000;
+    color:#ffb5cf;
+    padding:0.6rem;
+    border-radius:0.5rem;
+    cursor: pointer;
+}
+.section{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    font-size:1.6rem;
+    font-family: cursive;
+    
+}
+.about{
+    width:100%;
+    height:40vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    align-items:center;
+    color:#fff;
+    background:#000;
+    background-image: url('../img/unnamed.jpg');
+    background-size: cover;
+    background-size:auto  100% ;
+    background-repeat:no-repeat;
+}
+.content-about{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    width:80%;
+
+}
+.title-section{
+    width:55%;
+    text-align:center;
+    padding:0.8rem;
+    font-size: 2rem;
+}
+.text-section{
+    width:50%;
+    text-align:center;
+    padding:0.8rem;
+}
+.reference{
+    padding:0.5rem;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+
+}
+.reference .image{
+    width:30%;
+    height:55vh;
+    margin:0.5rem;
+    border-radius:0.6rem;
+    overflow: hidden;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+.container-reference{
+    width:65%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    padding:1rem;
+}
+.description-reference{
+    padding:0.8rem;
+}
+.button-reference{
+    background:#000;
+    padding:0.8rem;
+    border-radius:0.4rem;
+    color:#ffb5cf;
+    cursor: pointer;
+}
+.services{
+    height:70vh;
+}
+.header-services{
+    width:100%;
+    height:5vh;
+    text-align:center;
+}
+.container-services{
+    width:100%;
+    height:65vh;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+}
+.service{
+    width:30%;
+    height:60vh;
+    background:#000;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    font-family: 'Covered By Your Grace', cursive;
+    border-radius:0.5rem;
+    color:#ffb5cf;
+    font-size: 2rem;
+}
+.service .image{
+    width:95%;
+    height:50vh;
+    overflow:hidden;
+    border-radius:0.5rem;
+}
+.service .image img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.footer-service{
+    width:98%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    cursor: pointer;
+    border-radius:0.5rem;
+    padding:0.5rem;
+    transition: all 500ms;
+}
+.footer-service:hover{
+    background:#fff5;
+}
+.icon{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius:100%;
+    background:#fff;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+.icon svg{
+    width:1.5rem;
+}
+.header-gallery{
+    width:100%;
+    padding:1rem;
+    text-align:center;
+    font-size: 3rem;
+}
+.content-gallery{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+}
+.picture{
+    width:30%;
+    height:35rem;
+    background:#f2f2f2;
+    border-radius:0.5rem;
+    overflow: hidden;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    margin:1rem 0;
+}
+.picture .image{
+    width:98%;
+    height:30rem;
+    overflow:hidden;
+    border-radius:0.5rem;
+}
+.picture .image img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.about-gallery{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    padding:0.5rem;
+    cursor:pointer;
+}
+.testimonials{
+    height:30vh;
+}
+.footer{
+    width:100%;
+    text-align: center;
+    font-family: 'Covered By Your Grace', cursive;
+    padding:0.8rem;
 }
