@@ -238,27 +238,33 @@ li:hover{
 }
 .content-gallery{
     width:100%;
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-around;
 }
 .picture{
-    width:30%;
-    height:35rem;
+    width:100%;
+    height:450px;
     background:#f2f2f2;
     border-radius:0.5rem;
     overflow: hidden;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
-    margin:1rem 0;
+    padding: 10px;
 }
 .picture .image{
     width:98%;
-    height:30rem;
+    height:320px;
     overflow:hidden;
     border-radius:0.5rem;
+}
+.item-name{
+    width: 100%;
 }
 .picture .image img{
     object-fit: cover;
@@ -267,11 +273,12 @@ li:hover{
 }
 .about-gallery{
     width:100%;
+    height: 120px;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-around;
-    padding:0.5rem;
+    padding:5px;
     cursor:pointer;
 }
 .testimonials{
@@ -290,11 +297,11 @@ li:hover{
     flex-wrap: wrap;
     justify-content: center;
 }
-.section.services .header-service{
+.section.services .header-services{
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 0 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     height: 40px;
 }
@@ -351,3 +358,86 @@ li:hover{
         align-items: center;
         justify-content: space-between;
     }
+    
+.icon-wishlist svg{
+    fill: red;
+    transition: all 400ms;
+}
+.icon-wishlist:hover svg{
+    width: 20px;
+}
+@media (max-width: 850px){
+    .header nav{
+        display: none;
+    }
+    .hero{
+        height: 450px;
+    }
+    .section.about{
+        height: 220px;
+    }
+    .content-about{
+        width: 70%;
+    }
+    .title-section{
+        width: 100%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .text-section{
+        width: 100%;
+        font-size: 13px;
+        text-align: right;
+    }
+    .section.reference{
+        width: 100%;
+        height: 370px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    .section.reference .container-reference{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    .section.reference .container-reference .title-reference h4{
+        font-size: 13px;
+    }
+    .section.reference .container-reference .description-reference h4{
+        font-size: 13px;
+    }
+    
+    .section.reference .container-reference .button-reference{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .section.reference .container-reference .description-reference p{
+font-size: 13px;
+    }
+    .section.reference .image{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .section.reference .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .content-gallery{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
