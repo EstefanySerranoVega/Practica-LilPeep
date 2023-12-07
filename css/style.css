@@ -17,27 +17,27 @@ a{
 }
 .header{
     width:90%;
-    height:5rem;
+    height:65px;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-between;
-    font-size:1.8rem;
+    font-size:16px;
     font-family: 'Covered By Your Grace', cursive;
 }
 .logo{
     background:black;
-    width:7rem;
-    height:4.6rem;
+    width:120px;
+    height:60px;
     background-image: url('../img/Logo-Lil-Peep.png');
     background-size: cover;
     background-size: 100% 100%;
     background-repeat:no-repeat;
-    border-radius:0.6rem;
+    border-radius:8px;
 }
 nav{
-    width:65%;
-    height:5rem;
+    width:55%;
+    height:65px;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
@@ -49,17 +49,19 @@ nav ul{
     display:flex;
     flex-wrap:wrap;
     align-items:center;
-    justify-content:space-around;
-    gap: 5%;
+    justify-content:space-evenly;
+    gap: 10px;
     transition:all 400ms;
 }
 li{
     transition:all 400ms;
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
 }
 li:hover{
     background:pink;
-    padding:0.6rem;
-    border-radius:0.5rem;
+    border-radius:5px;
 }
 .content{
     width:90%;
@@ -76,19 +78,28 @@ li:hover{
 }
 .hero{
     width:100%;
-    height:90vh;
+    height:650px;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-around;
     font-family: 'Covered By Your Grace', cursive;
-    font-size:3rem;
+    font-size:20px;
     text-align:center;
 }
 .boxHeader .text{
     padding:0.6rem;
 }
-.hero .button{
+.container-action{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.hero .container-action .button{
     background:#000;
     color:#ffb5cf;
     padding:0.6rem;
@@ -101,13 +112,13 @@ li:hover{
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-around;
-    font-size:1.6rem;
+    font-size:16px;
     font-family: cursive;
     
 }
 .about{
     width:100%;
-    height:40vh;
+    height:380px;
     display:flex;
     flex-wrap:wrap;
     justify-content:flex-end;
@@ -131,7 +142,7 @@ li:hover{
     width:55%;
     text-align:center;
     padding:0.8rem;
-    font-size: 2rem;
+    font-size: 20px;
 }
 .text-section{
     width:50%;
@@ -139,18 +150,18 @@ li:hover{
     padding:0.8rem;
 }
 .reference{
-    padding:0.5rem;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content:center;
-
+    width: 100%;
+    height: 380px;
 }
 .reference .image{
     width:30%;
-    height:55vh;
-    margin:0.5rem;
-    border-radius:0.6rem;
+    height:370px;
+    margin:8px;
+    border-radius:5px;
     overflow: hidden;
     display:flex;
     flex-wrap:wrap;
@@ -175,25 +186,10 @@ li:hover{
     color:#ffb5cf;
     cursor: pointer;
 }
-.services{
-    height:70vh;
-}
-.header-services{
-    width:100%;
-    height:5vh;
-    text-align:center;
-}
-.container-services{
-    width:100%;
-    height:65vh;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:space-around;
-}
 .service{
-    width:30%;
-    height:60vh;
+    width:100%;
+    height:100%;
+    max-width: 320px;
     background:#000;
     display:flex;
     flex-wrap:wrap;
@@ -202,13 +198,7 @@ li:hover{
     font-family: 'Covered By Your Grace', cursive;
     border-radius:0.5rem;
     color:#ffb5cf;
-    font-size: 2rem;
-}
-.service .image{
-    width:95%;
-    height:50vh;
-    overflow:hidden;
-    border-radius:0.5rem;
+    font-size: 18px;
 }
 .service .image img{
     object-fit: cover;
@@ -222,16 +212,14 @@ li:hover{
     align-items:center;
     justify-content:space-around;
     cursor: pointer;
-    border-radius:0.5rem;
-    padding:0.5rem;
     transition: all 500ms;
 }
 .footer-service:hover{
     background:#fff5;
 }
 .icon{
-    width:2.5rem;
-    height:2.5rem;
+    width:30px;
+    height:30px;
     border-radius:100%;
     background:#fff;
     display:flex;
@@ -240,13 +228,13 @@ li:hover{
     justify-content:center;
 }
 .icon svg{
-    width:1.5rem;
+    width:15px;
 }
 .header-gallery{
     width:100%;
     padding:1rem;
     text-align:center;
-    font-size: 3rem;
+    font-size: 20px;
 }
 .content-gallery{
     width:100%;
@@ -295,3 +283,71 @@ li:hover{
     font-family: 'Covered By Your Grace', cursive;
     padding:0.8rem;
 }
+.section.services{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section.services .header-service{
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+}
+    .container-carousel{
+        width: 100%;
+        max-height: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .service{
+        margin:0 20px;
+    }
+    .container-services{
+        width: 100%;
+        height: 530px;
+
+    }
+    .container-services .service{
+        width: 320px;
+        height: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-services .service a{
+        width: 300px;
+        height: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-services .service a .image{
+        width: 98%;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-services .service a .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .container-services .service a .footer-service{
+        width: 98%;
+        height: 40px;
+        padding: 0 10px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
